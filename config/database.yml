@@ -3,8 +3,17 @@ development:
   encoding: unicode
   database: cchive_development
   pool: 5
+  username: postgres
+  password: Arsh@2005
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
+  database: cchive_production
   prepared_statements: false
   advisory_locks: false
+  username: postgres
+  password: Arsh@2005
+  host: localhost
+  port: 5432
