@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: cchive_development
+  database: cchive_developmentx2
   pool: 5
 
 production:
