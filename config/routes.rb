@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   visualize groups: [ "development" ]
   namespace :api do
     namespace :v1 do
+      get "search_users", to: "users#search_users"
+
       mount_devise_token_auth_for "User", at: "auth"
       resources :tutor_profiles, only: [ :index, :create ]
       get "tutor_profile", to: "tutor_profiles#my_tutor_profile"
